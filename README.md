@@ -43,7 +43,7 @@ REPOSITORY      TAG     IMAGE ID        CREATED         SIZE
 Name the container.
 
 ```shell
-docker tag <IMAGE ID> me/pyrosetta:latest
+docker tag <IMAGE ID> pyrosetta
 ```
 
 ## Usage
@@ -51,7 +51,7 @@ docker tag <IMAGE ID> me/pyrosetta:latest
 After building the image, you can run an interactive Python session.
 
 ```shell
-$ docker run -it me/pyrosetta
+$ docker run -it pyrosetta
 Python 2.7.12 (default, Dec  4 2017, 14:50:18)
 Type "copyright", "credits" or "license" for more information.
 
@@ -68,6 +68,6 @@ From there, it's just like using a regular Python interactive session.
 Load the PyRosetta package, and go on your way.
 
 ```python
-from pyrosetta.rosetta import *
-init()
+In[*1*]: from pyrosetta import *
+In[*2*]: init()
 ```
