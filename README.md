@@ -26,7 +26,7 @@ Modify the `wget` command in the `Dockerfile` to include the username and passwo
 RUN wget https://USERNAME:PASSWORD@graylab.jhu.edu/download/PyRosetta4/archive/release/PyRosetta4.Release.python27.ubuntu/PyRosetta4.Release.python27.ubuntu.release-184.tar.bz2
 ```
 
-Build the docker imageL
+Build the docker image.
 
 ```shell
 docker build .
@@ -40,7 +40,7 @@ REPOSITORY      TAG     IMAGE ID        CREATED         SIZE
 <none>          <none>  b7810dc4b84c    1 minute ago     8.32 GB
 ```
 
-Name the container:
+Name the container.
 
 ```shell
 docker tag <IMAGE ID> me/pyrosetta:latest
